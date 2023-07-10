@@ -1,0 +1,104 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-07-05 10:45:40.114459",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "email_address",
+  "mobile_no",
+  "pickup_location",
+  "cars",
+  "drop_location",
+  "section_break_4pwgq",
+  "status",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "pickup_location",
+   "fieldtype": "Small Text",
+   "label": "pickup location"
+  },
+  {
+   "fieldname": "cars",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "cars",
+   "options": "cars",
+   "reqd": 1
+  },
+  {
+   "fieldname": "drop_location",
+   "fieldtype": "Small Text",
+   "label": "drop location"
+  },
+  {
+   "default": "new",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "status",
+   "options": "new\nride created\nride completed\nAccepted"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "ride booking",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email_address",
+   "fieldtype": "Data",
+   "label": "Email address"
+  },
+  {
+   "fieldname": "mobile_no",
+   "fieldtype": "Int",
+   "label": "Mobile no",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_4pwgq",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-07-09 13:34:46.231450",
+ "modified_by": "Administrator",
+ "module": "One Company",
+ "name": "ride booking",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1
+}

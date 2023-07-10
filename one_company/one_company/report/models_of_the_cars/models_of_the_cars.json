@@ -1,0 +1,28 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2023-07-06 09:48:56.503006",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "json": "{\"filters\":[],\"fields\":[[\"model\",\"cars\"],[\"_aggregate_column\",\"cars\"]],\"order_by\":\"`tabcars`.`modified` desc\",\"add_totals_row\":0,\"page_length\":20,\"column_widths\":{\"model\":120,\"_aggregate_column\":200},\"group_by\":{\"group_by\":\"`tabcars`.`model`\",\"aggregate_function\":\"count\"}}",
+ "modified": "2023-07-06 10:14:55.543595",
+ "modified_by": "Administrator",
+ "module": "One Company",
+ "name": "models of the cars",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "",
+ "ref_doctype": "cars",
+ "report_name": "models of the cars",
+ "report_type": "Report Builder",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ]
+}

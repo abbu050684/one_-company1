@@ -1,0 +1,132 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "allow_rename": 1,
+ "creation": "2023-07-04 09:41:40.591688",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "cars",
+  "driver",
+  "amended_from",
+  "section_break_vrlme",
+  "total_hours",
+  "rate_per_hours",
+  "total_amount",
+  "section_break_8jlhy",
+  "cost_breakup",
+  "currency",
+  "create_a_ride"
+ ],
+ "fields": [
+  {
+   "fieldname": "cars",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "cars",
+   "options": "cars",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "rides",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "driver",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "driver",
+   "options": "Driver",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_vrlme",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "cost_breakup",
+   "fieldtype": "Table",
+   "label": "cost breakup ",
+   "options": "ride cost item"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "total amount",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_8jlhy",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_hours",
+   "fieldtype": "Float",
+   "label": "total hours",
+   "read_only": 1
+  },
+  {
+   "fieldname": "rate_per_hours",
+   "fieldtype": "Currency",
+   "label": "rate per hours",
+   "options": "currency"
+  },
+  {
+   "default": "SAR",
+   "fieldname": "currency",
+   "fieldtype": "Select",
+   "label": "currency",
+   "options": "USD\nINR\nSAR"
+  },
+  {
+   "fieldname": "create_a_ride",
+   "fieldtype": "Link",
+   "label": "Create A RIde",
+   "options": "ride booking"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [
+  {
+   "link_doctype": "cars",
+   "link_fieldname": "rides"
+  },
+  {
+   "link_doctype": "Driver",
+   "link_fieldname": "rides"
+  }
+ ],
+ "modified": "2023-07-06 15:16:36.557602",
+ "modified_by": "Administrator",
+ "module": "One Company",
+ "name": "rides",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "route": "rides",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

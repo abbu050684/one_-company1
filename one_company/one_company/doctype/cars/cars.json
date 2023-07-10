@@ -1,0 +1,152 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "allow_import": 1,
+ "allow_rename": 1,
+ "creation": "2023-07-03 09:51:17.917538",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "make",
+  "model",
+  "insurance_document",
+  "doe_insurance",
+  "amended_from",
+  "column_break_aguej",
+  "car_driver",
+  "ratings",
+  "feedback",
+  "submit",
+  "is_published",
+  "route",
+  "image"
+ ],
+ "fields": [
+  {
+   "fieldname": "make",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Make",
+   "reqd": 1
+  },
+  {
+   "fieldname": "model",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Model",
+   "reqd": 1
+  },
+  {
+   "fieldname": "insurance_document",
+   "fieldtype": "Attach",
+   "label": "Insurance Document"
+  },
+  {
+   "fieldname": "doe_insurance",
+   "fieldtype": "Date",
+   "label": "DOE Insurance"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "cars",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_aguej",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "car_driver",
+   "fieldtype": "Data",
+   "label": "Car driver"
+  },
+  {
+   "fieldname": "ratings",
+   "fieldtype": "Rating",
+   "label": "Ratings"
+  },
+  {
+   "fieldname": "feedback",
+   "fieldtype": "Data",
+   "label": "Feedback"
+  },
+  {
+   "fieldname": "submit",
+   "fieldtype": "Button",
+   "label": "submit"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_published",
+   "fieldtype": "Check",
+   "label": "is published"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route",
+   "reqd": 1
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  }
+ ],
+ "has_web_view": 1,
+ "index_web_pages_for_search": 1,
+ "is_published_field": "is_published",
+ "is_submittable": 1,
+ "links": [
+  {
+   "link_doctype": "Driver",
+   "link_fieldname": "rides"
+  }
+ ],
+ "modified": "2023-07-09 14:27:19.030840",
+ "modified_by": "Administrator",
+ "module": "One Company",
+ "name": "cars",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales Manager",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "route": "cars",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "make",
+ "translated_doctype": 1
+}

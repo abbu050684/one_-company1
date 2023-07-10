@@ -1,0 +1,27 @@
+{
+ "attach_print": 0,
+ "channel": "System Notification",
+ "creation": "2023-07-05 13:20:13.310562",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "ride booking",
+ "enabled": 1,
+ "event": "New",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Hey! You got a new car booking !",
+ "modified": "2023-07-05 13:20:13.310562",
+ "modified_by": "Administrator",
+ "module": "One Company",
+ "name": "new car booking",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_role": "System Manager"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "new car booking"
+}

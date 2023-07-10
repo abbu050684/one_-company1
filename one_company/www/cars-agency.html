@@ -1,0 +1,10 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+
+<div>
+    <h2>Cars Agency</h2>
+    {% for car in cars %}
+       <article>
+           {{ cars.make }} {{ cars.model }}
+       </article>
+       {% endfor %}
+</div>
